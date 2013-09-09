@@ -2,11 +2,11 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'router',
+    'router'
 ], function($, _, Backbone, router) {
     return {
         init: function() {
-            router.init()
+            Backbone.history.start()
         }
     }
 })

@@ -6,14 +6,13 @@ define([
 ], function($, _, Backbone, SampleListView) {
     var AppRouter = Backbone.Router.extend({
         route: {
+            '': 'list',
             'sample': 'list',
         },
         list: function() {
+            console.log("list")
+            var sampleListView = new SampleListView()
         },
     })
-
-    var init = function() {
-        var app = new AppRouter()
-        Backbone.history.start()
-    }
+    return new AppRouter()
 })
