@@ -3,10 +3,10 @@ define([
     'underscore',
     'backbone',
     'router',
-], function($, _, Backbone, Router) {
+], function($, _, Backbone, router) {
     return {
         init: function() {
-            Router.init()
+            router.init()
         }
     }
 })

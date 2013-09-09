@@ -16,7 +16,4 @@ define([
         var app = new AppRouter()
         Backbone.history.start()
     }
-    return {
-        init: init
-    }
 })
