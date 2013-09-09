@@ -1,7 +1,9 @@
 webproj-template
 ================
-this is template for web project.
-this project include following libs.
-1, require.js
-2, backbone.js
-3, bootstrap(css)
+<h3>this is template for web project.</h3>
+<p>this project include following libs.<p>
+<ol>
+<li>require.js</li>
+<li>backbone.js</li>
+<li>bootstrap(css)</li>
+</ol>
