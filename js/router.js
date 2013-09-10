@@ -2,15 +2,20 @@ define([
     'jquery',
     'underscore',
     'backbone',
+    'views/header',
     'views/sample/list',
-], function($, _, Backbone, SampleListView) {
+], function($, _, Backbone, HeaderView, SampleListView) {
     var AppRouter = Backbone.Router.extend({
+	    initialize: function() {
+            var headerView = new HeaderView()
+            headerView.render()
+            this.list()
+	    },
         route: {
             '': 'list',
             'sample': 'list',
         },
         list: function() {
-            console.log("list")
             var sampleListView = new SampleListView()
         },
     })

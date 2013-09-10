@@ -8,4 +8,5 @@ define([
             console.log("###")
         }
     });
+    return SampleListView
 })
