@@ -9,7 +9,7 @@ define([
 	    initialize: function() {
             var headerView = new HeaderView()
             headerView.render()
-            this.list()
+//this.list()
 	    },
         route: {
             '': 'list',
