@@ -15,14 +15,23 @@ define([
         render: function() {
             this.$el.append(_.template(template))
         },
-        list: function() {
+        list: function(e) {
+            this.activateTab(e)
             Backbone.history.navigate("", true)
             return false
         },
         open: function(e) {
+            this.activateTab(e)
             Backbone.history.navigate("open", true)
             return false
-        }
+        },
+        activateTab: function(e) {
+            $("#menu").find("li").each(function(){
+                $(this).removeClass("active")
+            })
+            $(e.target).parent("li").addClass("active")
+        },
+
     });
     return HeaderView
 })
